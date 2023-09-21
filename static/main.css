@@ -1,0 +1,78 @@
+body{
+    background: purple;
+}
+
+.bg-black{
+    background: #000000b9;
+}
+
+.card-project:hover {
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(228, 199, 10, 0.61);
+}
+.btn-pink {
+    background-color: pink;
+
+  }
+  
+  .btn-pink:hover {
+    background-color: pink; 
+    color: white; 
+  }
+  #sosaplays {
+    position: relative;
+    transition: background-color 0.5s ease; 
+  }
+  
+  #sosaplays:hover {
+    background-color: pink; 
+    border-radius: 10px; 
+    padding: 5px 10px; 
+  }
+  /* posts.html */ 
+  .pink-box {
+    background-color: pink;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .black-text {
+    color: black;
+  }
+  .pink-text {
+    color: pink;
+  }
+  /*home*/
+  .btn-with-hover {
+    background-color: pink;
+    color: black;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-with-hover:hover {
+    background-color: white;
+    color: pink;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+}
+/*post_detail*/
+.image-container {
+  border: 2px solid white; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  max-width: 100%; 
+  background-color: pink;
+}
+.rounded-image {
+  max-width: 100%; 
+}
+.description-box {
+  background-color: black; 
+  color: white; 
+  border: 2px solid white; 
+  padding: 10px; 
+  margin-top: 20px; 
+}

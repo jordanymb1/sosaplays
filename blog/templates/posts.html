@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+<div class="pink-box">
+  <h1 class="fs-2 black-text">POSTS</h1>
+  <h3 class="black-text">PROJECTO {{ total_posts }} BD {{ total_posts|pluralize }}</h3>
+</div>
+
+{% for post in posts %}
+<div class="py-3">
+  <div class="card card-body bg-black">
+    <div class="row">
+      <div class="col-3">
+        <img class="img-fluid" src="{{ post.image.url }}" alt="{{ post.title }}">
+      </div>
+      <div class="col-9">
+        <h1 class="pink-text">{{ post.title }}</h1>
+        <p>{{ post.description|striptags|truncatechars:100 }}</p>
+        <p>{{ post.date|date:'M d Y'|upper }}</p>
+        <a href="{% url 'blog:post_detail' post.id %}" class="pink-text">{{ post.title }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
